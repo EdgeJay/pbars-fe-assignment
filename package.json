@@ -1,0 +1,61 @@
+{
+  "name": "pbars-fe-assignment",
+  "version": "0.1.0",
+  "description": "API powered React progress bars for frontend assignment",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "lint": "eslint \"./src/**/*.ts\" \"./src/**/*.tsx\"",
+    "build": "npm run clean && NODE_ENV=production webpack",
+    "build:debug": "npm run clean && webpack",
+    "start": "NODE_ENV=development ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdgeJay/pbars-fe-assignment.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "webpack",
+    "react"
+  ],
+  "author": "Wu Huijie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdgeJay/pbars-fe-assignment/issues"
+  },
+  "homepage": "https://github.com/EdgeJay/pbars-fe-assignment#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/sinon": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "ava": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "prettier": "^2.0.4",
+    "sinon": "^9.0.2",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
