@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.(ts|tsx)?$/,
         exclude: [/node_modules/, /\.test.(ts|tsx)?$/],
         use: [
@@ -31,24 +35,8 @@ module.exports = {
     ],
   },
   externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
-      root: 'React',
-    },
-    'react-dom': {
-      commonjs: 'react-dom',
-      commonjs2: 'react-dom',
-      amd: 'react-dom',
-      root: 'ReactDOM',
-    },
-    'styled-components': {
-      commonjs: 'styled-components',
-      commonjs2: 'styled-components',
-      amd: 'styled-components',
-      root: 'StyledComponents',
-    },
+    react: 'React',
+    'react-dom': 'ReactDOM',
   },
   resolve: {
     extensions: ['*', '.ts', '.tsx', '.js', '.jsx', '.json'],
@@ -71,4 +59,9 @@ module.exports = {
       },
     }),
   ],
+  devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 3000,
+  },
 };

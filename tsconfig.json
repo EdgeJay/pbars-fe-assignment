@@ -16,6 +16,8 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "rootDirs": ["./src"],
+    "typeRoots": ["./src/types"],
+    "types": ["node"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
