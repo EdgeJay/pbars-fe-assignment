@@ -1,0 +1,9 @@
+export enum BaseColours {
+  BG_COLOUR = '#ffffff',
+  PAGE_BG_COLOUR = '#949494',
+  PROGRESS_BAR_BG = '#f7f7f7',
+  PROGRESS_BAR_BORDER = '#cccccc',
+  PROGRESS_BAR_HIGHLIGHTED_BORDER = '#000000',
+  PROGRESS_BAR_BLUE = '#3495eb',
+  PROGRESS_BAR_RED = '#ff4c38',
+}
